@@ -1,0 +1,207 @@
+body{
+	background-color: #02010a;
+}
+
+#contenido{
+	display: flex;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	flex-flow: row wrap;
+}
+#MiSeccion{
+	-webkit-animation: miAnimacion 1s; /* Safari 4+ */
+	-moz-animation:    miAnimacion 1s; /* Fx 5+ */
+	-o-animation:      miAnimacion 1s; /* Opera 12+ */
+	animation: miAnimacion 1s;
+}
+
+@-webkit-keyframes miAnimacion{
+	0% {margin-top: 150%;}
+	60% {margin-top: -5%;}
+	100% {margin-top: 0%;}
+}
+@-moz-keyframes miAnimacion {
+	0% {margin-top: 150%;}
+	60% {margin-top: -5%;}
+	100% {margin-top: 0%;}
+}
+@-o-keyframes miAnimacion {
+	0% {margin-top: 150%;}
+	60% {margin-top: -5%;}
+	100% {margin-top: 0%;}
+}
+@keyframes miAnimacion {
+	0% {margin-top: 150%;}
+	60% {margin-top: -5%;}
+	100% {margin-top: 0%;}
+}
+
+#Cabecera {
+	background-color: #5b7989;
+	color: white;
+	font-family: "Dancing Script",cursive;
+	font-size: 25px;
+	border-radius: 10px 10px 0px 0px;
+
+	text-shadow: 2px 0px #02010a;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+	align-items:center;
+	width: 100%;
+	padding: 10px;
+
+}
+
+#central{
+	background-color: #82C3a6;
+	width: 100%;
+}
+
+
+#secundaria, #Paisajes{
+	background-color: #D5C75F;
+	width: 100%;
+}
+
+
+p{
+	font-family: "Dancing Script";
+	text-shadow: 0px 0px #02010a;
+}
+
+
+#spie{
+		background-color: #C6D5C5;
+		font-family: 'Dancing Script', cursive;
+		border-radius: 0px 0px 10px 10px;
+
+		text-shadow: 2px 0px #02010a;
+
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		padding: 50px;
+		width: 100%;
+	}
+
+	a{
+			font-family: "Dancing Script",cursive;
+			color: inherit;
+			justify-content:flex-end;
+		}
+
+.contenedor{/*imagenes */
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	width: 100%;
+	}
+
+	.bloqueIzq, .bloqueDerecho{
+		width: 100%;
+	}
+	.bloqueContacto, .bloqueTermino, .bloqueRedes, .bloqueDerechos{
+		width: 100%;
+	}
+	.bloque1, .bloque2, .bloque3, .bloque4, .bloque5, .bloque6{
+		width: 100%;
+	}
+	@media (max-width: 899px) {
+		#contenido {
+			width: 100%;
+		}
+		#Cabecera{
+			width: 100%;
+			justify-content:center;
+			align-items:center;
+		}
+		#spie{
+			width: 100%;
+			justify-content: flex-end;
+			align-items:center;
+		}
+	}
+
+	@media (min-width: 900px) {
+		#Cabecera{
+			width: 100%;
+		}
+		#central{
+			width: 100%;
+		}
+		.bloqueIzq, .bloqueDerecho{
+			width: 50%;
+		}
+		.bloqueContacto, .bloqueTermino, .bloqueRedes, .bloqueDerechos{
+			width: 25%;
+		}
+		.bloque1, .bloque2, .bloque3, .bloque4, .bloque5, .bloque6{
+			width: 33.33%;
+		}
+		#contenido {
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+#ImgIzq, #ImgDer, #ImgCent{
+	-webkit-filter:drop-shadow(2px 2px 2px #02010a);
+	filter: drop-shadow(2px 2px 2px #02010a);
+
+}
+
+#ImgIzq:hover {
+	-ms-transform: rotate(10deg); /* IE 9 */
+	-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+	-moz-transform: rotate(10deg);
+	transform: rotate(10deg);
+	-webkit-filter:drop-shadow(2px 2px 2px #82c3a6);
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+
+}
+
+#ImgDer:hover {
+	-ms-transform:translate(20px,-5px); /* IE 9 */
+	-webkit-transform: translate(20px,-5px); /* Chrome, Safari, Opera */
+	-moz-transform: translate(20px,-5px);
+	transform: translate(20px,-5px);
+	-webkit-filter:drop-shadow(2px 2px 2px #82c3a6);
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+
+#Img1{
+	width: 100%;
+	-ms-transform:blur(10px); /* IE 9 */
+	-webkit-transform: blur(10px); /* Chrome, Safari, Opera */
+	-moz-transform: blur(10px);
+	transform: blur(10px);
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+
+#Img3{
+width: 100%;
+-ms-transform:sepia(90%); /* IE 9 */
+-webkit-transform: sepia(90%); /* Chrome, Safari, Opera */
+-moz-transform: sepia(90%);
+transform: sepia(90%);
+-webkit-filter: sepia(90%);
+filter: sepia(90%);
+}
+
+#Img2, #Img4, #Img6{
+width: 100%;
+-ms-transform:grayscale(100%); /* IE 9 */
+-webkit-transform: grayscale(100%); /* Chrome, Safari, Opera */
+-moz-transform: grayscale(100%);
+transform: grayscale(100%);
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
